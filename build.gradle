@@ -1,0 +1,132 @@
+buildscript {
+    ext{
+        springBootVersion = '2.7.1'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE"
+        //classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.5.0.2730"
+
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "3.5.0.2730"
+}
+
+apply plugin: "org.sonarqube"
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://192.168.0.15:9000"
+        property "sonar.login", "sqp_3520dbf2f795981373d6459acad98afd1b21b797"        // 로그인 id 또는 인증토큰// 인증토큰 사용시는 공백으로
+        property "sonar.projectKey", "T1x_agms_server"
+        property "sonar.projectName", "T1x_agms_server"
+        property "sonar.projectVersion", "1.0"
+        property "sonar.sourceEncoding", "UTF-8"
+        //property "sonar.sources", "uxn_api/src/main"
+        property "sonar.profile", "Sonar way"
+        property "sonar.coverage.jacoco.xmlReportPaths", "uxn_api/build/reports/test/jacocoTestReport.xml"    // Test Coverage Report 생성한 경우 사용
+    }
+}
+
+
+allprojects{ // 루트 프로젝트까지 설정 적용.
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    group 'org.example'
+    version '1.0.47'
+
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+    compileJava.options.encoding = 'UTF-8'
+
+
+    repositories {
+        mavenCentral()
+    }
+
+
+    dependencies {
+//        compileOnly 'org.projectlombok:lombok'
+//
+//        annotationProcessor 'org.projectlombok:lombok'
+//        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+//
+//        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    // mail
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+
+    //lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //DB
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'com.h2database:h2'
+
+    // Swagger
+    implementation("io.springfox:springfox-swagger-ui:2.9.2")
+    implementation("io.springfox:springfox-swagger2:2.9.2")
+
+    // jwt
+    implementation('com.auth0:java-jwt:3.19.2') // oauth
+    implementation('io.jsonwebtoken:jjwt:0.9.1') // okta
+
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.3'
+    }
+    test {
+        useJUnitPlatform()
+    }
+}
+bootJar{
+    enabled = false
+}
+
+jar {
+    enabled = false
+}
+
+//tasks.withType(Copy).all { duplicatesStrategy 'exclude' }
+
+
+project(':uxn_api'){
+
+    dependencies {
+        implementation project(':uxn_common') // 컴파일 시 uxn_common 로딩
+        implementation group: 'org.springframework.boot', name: 'spring-boot-maven-plugin', version: '2.7.1'
+    }
+}
+
+project(':uxn_common'){
+    // 공통 코드
+    bootJar { enabled = false } // core 은 bootJar 로 패키징 할 필요 없음
+    jar { enabled = true }
+
+    dependencies {
+
+    }
+}
+
+test {
+    exclude '**/*'
+}
+
+

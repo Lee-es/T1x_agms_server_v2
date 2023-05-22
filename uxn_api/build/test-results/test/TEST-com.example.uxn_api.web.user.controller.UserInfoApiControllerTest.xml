@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:16" hostname="NOTEBOOK-KWYEOM" time="0.165">
+  <properties/>
+  <testcase name="average test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
+  <testcase name="diabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
+  <testcase name="activate test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.015"/>
+  <testcase name="getPercentileWithTime test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.021"/>
+  <testcase name="getUserInfoByUserId test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.011"/>
+  <testcase name="getPercent test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.012"/>
+  <testcase name="bloodSugarReport test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.018"/>
+  <testcase name="getUserInfo test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.01"/>
+  <testcase name="percentAndTime test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.013"/>
+  <testcase name="getDiabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.015"/>
+  <testcase name="getMedian test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.01"/>
+  <system-out><![CDATA[2023-05-19 17:33:15.647  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest], using SpringBootContextLoader
+2023-05-19 17:33:15.648  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 17:33:15.648  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: UserInfoApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 17:33:15.653  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.UserInfoApiControllerTest
+2023-05-19 17:33:15.653  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 17:33:15.654  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a0d5396, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76b85ce6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@16f3be34, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1271feb2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72009e89, org.springframework.test.context.support.DirtiesContextTestExecutionListener@466ba343, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d62b7a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50fb54d4, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@26797c94, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d13b2a3, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6594fd32, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f4358a0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2330400, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2215284f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60aa2c52, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@15d9febf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f50fb00]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:33:15.682  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Starting UserInfoApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:33:15.682 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:33:15.682  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:33:16.270  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:16.345  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8b70f85c-33d6-4e00-af52-4b128d002a8c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:16.467  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b8b5f5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396b48fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@67e206c5, org.springframework.security.web.header.HeaderWriterFilter@6592fa91, org.springframework.security.web.csrf.CsrfFilter@f81c7ee, org.springframework.security.web.authentication.logout.LogoutFilter@95e537b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39165aaf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57cd03e6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32a3be5d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30301206, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b30453f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@598464ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2332a2d, org.springframework.security.web.session.SessionManagementFilter@66dd1347, org.springframework.security.web.access.ExceptionTranslationFilter@6b54e957, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60f04e58]
+2023-05-19 17:33:16.515  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:16.515  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:16.516  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-19 17:33:16.531  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Started UserInfoApiControllerTest in 0.874 seconds (JVM running for 32.168)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/diabetes/average/33
+       Parameters = {_csrf=[ddb4fdfe-7755-4f3b-8ab3-1ba7d2951a7b]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#average(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = 99.99
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/diabetes-list/start-end/33
+       Parameters = {startDay=[25], endDay=[27], _csrf=[8a16e790-6799-431b-9f70-9e052a341792]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#diabetesList(Long, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [{"diabetes":99.99,"create_data_time":"2023-05-19T17:33:16.5499196"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/activate/percent/33
+       Parameters = {day=[3], _csrf=[6d80658e-5ff0-4af5-9684-891492de1f56]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#activate(Long, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = 0.0
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/activate/percent/33
+       Parameters = {_csrf=[9a938848-f5a4-421e-9638-a5750fd02d76]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#activate(Long, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = 0.0
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/percentile/time/33
+       Parameters = {hour=[17], minutes=[33], _csrf=[a1ee0d4c-62bc-4f40-8d12-43af455a2443]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getPercentileWithTime(Long, Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"5%":[99.99],"25%":[99.99],"75%":[99.99],"95%":[99.99],"50%":[100.0]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/search/userID
+       Parameters = {_csrf=[437b32b2-f2db-4c0a-9635-271ef65359b7]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getUserInfoByUserId(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-19T17:33:16.6039639"}]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:16.621  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiController        : size : 1
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/percent/33
+       Parameters = {_csrf=[8b9f90b4-cbc9-46bc-9ca6-a67191440219]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getPercent(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"5%":[99.99],"25%":[99.99],"75%":[99.99],"95%":[99.99],"50%":[100.0]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/report/blood/sugar/33
+       Parameters = {_csrf=[ac421ba8-e0c1-4a86-a126-54eba9342bac]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#bloodSugarReport(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [{"startDay":"2023-05-05T17:33:16.6343851","endDay":"2023-05-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-20T17:33:16.6343851","endDay":"2023-05-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-05T17:33:16.6343851","endDay":"2023-04-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-21T17:33:16.6343851","endDay":"2023-04-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-06T17:33:16.6343851","endDay":"2023-03-20T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-19T17:33:16.6343851","endDay":"2023-03-05T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-04T17:33:16.6343851","endDay":"2023-02-18T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-20T17:33:16.6343851","endDay":"2023-02-03T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-05T17:33:16.6343851","endDay":"2023-01-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2022-12-21T17:33:16.6343851","endDay":"2023-01-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/33
+       Parameters = {_csrf=[d9346987-0e2f-4022-a861-9d5a245a31b4]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getUserInfo(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-19T17:33:16.6477971"}]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/agp/33
+       Parameters = {range=[70, 180, 70, 54, 180, 250], _csrf=[5029cdbb-05cc-4f14-8a27-542d8061c724]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#percentAndTime(Long, List)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"퍼센트1":100,"시간1":2,"시간2":0,"퍼센트3":0,"퍼센트2":0,"시간3":0,"시간4":0,"퍼센트5":0,"퍼센트4":0,"시간5":0}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/diabetes-list/33
+       Parameters = {month=[12], day=[27], _csrf=[a5d5bbb2-2174-4648-b250-b0d6ee6d91de]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getDiabetesList(Long, Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/diabetes-list/33
+       Parameters = {month=[12], _csrf=[7aab451f-97b8-4b59-badf-cff72f6a5977]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getDiabetesList(Long, Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/diabetes-list/33
+       Parameters = {day=[27], _csrf=[83157170-ede9-4fa2-9a64-a0f297ff9666]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getDiabetesList(Long, Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [99.99]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/info/median/33
+       Parameters = {month=[12], day=[27], _csrf=[e786c0d2-3632-4b39-9553-d0088bd5ef65]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserInfoApiController
+           Method = com.example.uxn_api.web.user.controller.UserInfoApiController#getMedian(Long, Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

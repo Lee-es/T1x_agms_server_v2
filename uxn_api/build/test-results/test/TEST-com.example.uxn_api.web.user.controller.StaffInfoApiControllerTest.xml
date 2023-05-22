@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:13" hostname="NOTEBOOK-KWYEOM" time="0.1">
+  <properties/>
+  <testcase name="unRecognizeList test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.017"/>
+  <testcase name="recognize test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.008"/>
+  <testcase name="staffInfoResponse test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.011"/>
+  <testcase name="userRegist test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.014"/>
+  <testcase name="staffList test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.011"/>
+  <testcase name="userRemoveRegist test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.009"/>
+  <testcase name="sendLink test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.01"/>
+  <testcase name="staffInfoResDto test" classname="com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest" time="0.01"/>
+  <system-out><![CDATA[2023-05-19 17:33:12.643  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest], using SpringBootContextLoader
+2023-05-19 17:33:12.645  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 17:33:12.645  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest]: StaffInfoApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 17:33:12.652  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.StaffInfoApiControllerTest
+2023-05-19 17:33:12.653  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 17:33:12.654  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e251c8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17374d87, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c27bba2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@253ce354, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33469a2a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1eb0b2b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f5bf06f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4dbf8493, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4a2fd0c4, org.springframework.test.context.event.EventPublishingTestExecutionListener@5111ce03, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@19994c6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30b3137a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@42e5c58, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b90fb08, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16626b18, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3e62926d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4858d565]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:33:12.683  INFO 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiControllerTest   : Starting StaffInfoApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:33:12.683 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiControllerTest   : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:33:12.684  INFO 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:33:13.389  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:13.468  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b2576eb9-391e-4e68-9375-f529fb112ee1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:13.591  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59b291f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ef365df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b283013, org.springframework.security.web.header.HeaderWriterFilter@6e168a08, org.springframework.security.web.csrf.CsrfFilter@9cfddc9, org.springframework.security.web.authentication.logout.LogoutFilter@529a3814, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44397df, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@589db75d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@696e4b1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@538538b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a29518d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35c60a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cac2c5d, org.springframework.security.web.session.SessionManagementFilter@2c7e91c0, org.springframework.security.web.access.ExceptionTranslationFilter@22947281, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@750ddfcc]
+2023-05-19 17:33:13.643  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:13.643  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:13.644  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-05-19 17:33:13.657  INFO 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiControllerTest   : Started StaffInfoApiControllerTest in 0.999 seconds (JVM running for 29.294)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/un-recognize/list/111
+       Parameters = {_csrf=[73444735-e455-40cb-a864-1b195bb217b9]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#unRecognizeList(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [{"idx":111,"name":"user","birth":null,"email":"user123@gmail.com"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/recognize/33/111
+       Parameters = {_csrf=[92fc7224-9f13-4bb0-898b-86481ba86bb5]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#recognize(Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/detail/111
+       Parameters = {_csrf=[ec83b608-a420-49bc-b2bb-e0eadec478dd]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#staffInfoResponse(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"idx":111,"hospital":null,"birth":null,"email":"staff123@gmail.com","recognize":false,"staff_name":"staff","phone_number":null,"approval_code":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/user/staff-info/registration
+       Parameters = {_csrf=[bf2eba0b-dff8-40d1-9171-3d440e319d1d]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"15"]
+             Body = {"code":"code"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#userRegist(UserRegistrationDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"code":"code","staff_name":null,"user_email":null,"staff_idx":null,"user_idx":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:13.720 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiController       : staff list :
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/list
+       Parameters = {_csrf=[c27bee2c-0438-42b5-bff7-10a90fd2796b]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#staffList()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [{"idx":111,"hospital":null,"email":"abc123@gmail.com","staff_name":"staff"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/user/staff-info/remove/registration
+       Parameters = {_csrf=[14ce3eb3-09dd-4ed1-ba4f-a40f6892e973]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"94"]
+             Body = {"staffName":"staff","userEmail":"abc123@gmail.com","staffIdx":123,"userIdx":33,"code":"code"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#userRemoveRegist(UserRegistrationDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:13.744 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiController       : 이메일 확인 :staff123@gmail.com
+2023-05-19 17:33:13.744 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.StaffInfoApiController       : idx 확인 :111
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/send-mail/111
+       Parameters = {email=[staff123@gmail.com], userIdx=[111L], _csrf=[be4f9578-cfcd-4063-9aef-716e11acb8ef]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#sendLink(String, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/user/staff-info/staff-detail/111
+       Parameters = {_csrf=[4462eeda-9798-4850-9ed0-85144c5aff2f]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.StaffInfoApiController
+           Method = com.example.uxn_api.web.user.controller.StaffInfoApiController#staffInfoResDto(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = [{"idx":111,"hospital":null,"birth":null,"email":"staff123@gmail.com","recognize":false,"staff_name":"staff","phone_number":null,"approval_code":null}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LoginApiControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LoginApiControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.uxn_api.web.login.controller.html">com.example.uxn_api.web.login.controller</a> &gt; LoginApiControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.085s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">login test</td>
+<td class="success">loginTest()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">login verify test</td>
+<td class="success">loginVerifyTest()</td>
+<td class="success">0.069s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-05-19 17:33:07.073  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.login.controller.LoginApiControllerTest], using SpringBootContextLoader
+2023-05-19 17:33:07.074  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.login.controller.LoginApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 17:33:07.074  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.login.controller.LoginApiControllerTest]: LoginApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 17:33:07.090  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.login.controller.LoginApiControllerTest
+2023-05-19 17:33:07.091  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 17:33:07.092  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41e9c49e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37992194, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2ccdc6e1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68fd099a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@673fed2f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1954e5dd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b6cd2d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bdda1f6, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@43937937, org.springframework.test.context.event.EventPublishingTestExecutionListener@7d571695, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4010f1f5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@76f42a10, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ef6af38, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bd0e7cd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2c082c1b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7bfb2720, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@606fc808]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:33:07.125  INFO 30880 --- [    Test worker] c.e.u.w.l.c.LoginApiControllerTest       : Starting LoginApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:33:07.126 DEBUG 30880 --- [    Test worker] c.e.u.w.l.c.LoginApiControllerTest       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:33:07.126  INFO 30880 --- [    Test worker] c.e.u.w.l.c.LoginApiControllerTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-05-19 17:33:07.702  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:07.793  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2f61811c-2529-4096-8c0d-699e8b8aa942
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:07.931  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a63d9ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46fdc4db, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c594a58, org.springframework.security.web.header.HeaderWriterFilter@30ec821, org.springframework.security.web.csrf.CsrfFilter@230cc272, org.springframework.security.web.authentication.logout.LogoutFilter@34660887, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44dfe097, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@26e05464, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d9d5fcb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7211b235, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@327adcb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47c0451c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e2ca57, org.springframework.security.web.session.SessionManagementFilter@79031858, org.springframework.security.web.access.ExceptionTranslationFilter@500bc4cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f226802]
+2023-05-19 17:33:07.997  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:07.997  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:07.998  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-19 17:33:08.018  INFO 30880 --- [    Test worker] c.e.u.w.l.c.LoginApiControllerTest       : Started LoginApiControllerTest in 0.923 seconds (JVM running for 23.655)
+2023-05-19 17:33:08.033 DEBUG 30880 --- [    Test worker] c.e.u.w.l.controller.LoginApiController  : check pared here
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/login
+       Parameters = {_csrf=[59804c01-522f-47b3-ac57-157ad00badca]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;70&quot;]
+             Body = {&quot;userId&quot;:&quot;user&quot;,&quot;password&quot;:&quot;uxn1234!@&quot;,&quot;refreshToken&quot;:&quot;refreshToken&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.login.controller.LoginApiController
+           Method = com.example.uxn_api.web.login.controller.LoginApiController#login(LoginReqDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:08.047  INFO 30880 --- [    Test worker] c.e.u.w.l.controller.LoginApiController  : 컨트롤러
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/login/verify
+       Parameters = {_csrf=[73eef096-e9bc-4795-930b-71a79f32769b]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;24&quot;]
+             Body = {&quot;password&quot;:&quot;uxn1234!@&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.login.controller.LoginApiController
+           Method = com.example.uxn_api.web.login.controller.LoginApiController#loginVerify(LoginReqDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;password&quot;:&quot;uxn1234!@&quot;,&quot;email&quot;:&quot;abc123@gmail.com&quot;,&quot;idx&quot;:33,&quot;emailVerifyCode&quot;:null,&quot;role&quot;:null,&quot;gender&quot;:null,&quot;birth&quot;:null,&quot;eventCheck&quot;:false,&quot;emailVerifiedSuccess&quot;:false,&quot;enabled&quot;:false,&quot;errorCount&quot;:0,&quot;accountLock&quot;:false,&quot;scanCount&quot;:0,&quot;emailVerifyStartTime&quot;:null,&quot;willConfirmDate&quot;:null,&quot;minGlucose&quot;:0,&quot;maxGlucose&quot;:0,&quot;authorities&quot;:null,&quot;devices&quot;:null,&quot;noteList&quot;:null,&quot;username&quot;:&quot;user&quot;,&quot;accountNonLocked&quot;:false,&quot;accountNonExpired&quot;:false,&quot;credentialsNonExpired&quot;:false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5</a> at 2023. 5. 19. 오후 5:33:17</p>
+</div>
+</div>
+</body>
+</html>

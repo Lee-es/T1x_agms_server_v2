@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MailApiControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MailApiControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.uxn_api.web.email.html">com.example.uxn_api.web.email</a> &gt; MailApiControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.189s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">checkMail test</td>
+<td class="success">checkMailTest()</td>
+<td class="success">0.035s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">confirmEmail test</td>
+<td class="success">confirmEmailTest()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">mailSendForInvite test</td>
+<td class="success">mailSendForInviteTest()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">mailSend test</td>
+<td class="success">mailSendTest()</td>
+<td class="success">0.035s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">passwordLink test</td>
+<td class="success">passwordLinkTest()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-05-19 17:33:04.478  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.email.MailApiControllerTest], using SpringBootContextLoader
+2023-05-19 17:33:04.481  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.email.MailApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 17:33:04.482  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.email.MailApiControllerTest]: MailApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 17:33:04.506  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.email.MailApiControllerTest
+2023-05-19 17:33:04.508  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 17:33:04.510  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a0c2005, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6579e6f1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7ecd186c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3bf9fd4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@18a88bae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@324cb824, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2454c879, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b6ab218, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@743b720, org.springframework.test.context.event.EventPublishingTestExecutionListener@5099b274, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@520cbf1e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5cf83d35, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46987b3d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b8f7b88, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c4cdba8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71c04281, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@74849e17]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:33:04.633  INFO 30880 --- [    Test worker] c.e.u.web.email.MailApiControllerTest    : Starting MailApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:33:04.636 DEBUG 30880 --- [    Test worker] c.e.u.web.email.MailApiControllerTest    : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:33:04.637  INFO 30880 --- [    Test worker] c.e.u.web.email.MailApiControllerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-05-19 17:33:05.511  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:05.627  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e6548d97-fd41-4932-b50d-21dfbf5d61ab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:05.762  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73203967, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dc5fc69, org.springframework.security.web.context.SecurityContextPersistenceFilter@450db2ec, org.springframework.security.web.header.HeaderWriterFilter@669089f8, org.springframework.security.web.csrf.CsrfFilter@7e9e525a, org.springframework.security.web.authentication.logout.LogoutFilter@46df23fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4aaf593d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52bd2f58, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d93265d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2b6aac92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10059d26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72380997, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23631f41, org.springframework.security.web.session.SessionManagementFilter@490d3515, org.springframework.security.web.access.ExceptionTranslationFilter@3acdf211, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71fdf0ca]
+2023-05-19 17:33:05.818  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:05.819  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:05.820  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-19 17:33:05.845  INFO 30880 --- [    Test worker] c.e.u.web.email.MailApiControllerTest    : Started MailApiControllerTest in 1.329 seconds (JVM running for 21.482)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/check-mail/33/staff1234@gmail.com
+       Parameters = {_csrf=[d357456c-811f-46bc-bb40-c2ada13bdde4]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#checkMail(Long, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=null&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[be2eaebc-b6a9-4632-8aea-bcf7b95d21d5]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[1db09378-fd49-4d03-823a-846f4cc10402]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[88a2d070-a353-401d-94a6-ae7b2a7bbbef]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[dd8bd57f-c735-4429-906a-4ad746450e1d]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1+%EC%9D%B8%EC%A6%9D%EC%9D%B4+%EC%99%84%EB%A3%8C+%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[0f4e49f1-ab42-4a76-9b85-1f19549af769]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%8B%9C%EA%B0%84%EC%9D%B4+%EC%B4%88%EA%B3%BC%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.+%EB%8B%A4%EC%8B%9C+%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%9D%84+%ED%95%B4+%EC%A3%BC%EC%8B%AD%EC%8B%9C%EC%98%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[f741e878-a1f6-4376-97a8-eb22fececcb1]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/confirm/staff1234@gmail.com/testCode
+       Parameters = {_csrf=[e18aa547-83c9-4b42-b180-6b2f1451cbce]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#confirmEmail(String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%9D%84+%ED%95%A0+%EC%88%98+%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4.
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%9D%84+%ED%95%A0+%EC%88%98+%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4.&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/alert?message=%EC%9D%B8%EC%A6%9D%EC%9D%84+%ED%95%A0+%EC%88%98+%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4.
+          Cookies = []
+이메일 : user1234@gmail.com
+유저
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/send
+       Parameters = {email=[user1234@gmail.com], _csrf=[393aed25-c1d0-4d09-9639-9872bb0430b3]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSend(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+이메일 : staff1234@gmail.com
+스태프
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/send
+       Parameters = {email=[staff1234@gmail.com], _csrf=[2602940b-11e6-4dce-bd31-8ee6f38489df]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSend(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+이메일 : staff1234@gmail.com
+스태프
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/send
+       Parameters = {email=[staff1234@gmail.com], _csrf=[36679cfe-607e-4c13-b899-709c165da0fc]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSend(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/invite
+       Parameters = {staffIdx=[111], staffEmail=[staff1234@gmail.com], email=[user1234@gmail.com], _csrf=[e48e3868-490b-49c7-86c7-901c23818b81]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSendForInvite(Long, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:05.998 ERROR 30880 --- [    Test worker] c.e.u.web.error.CustomExceptionHandler   : LoginException :411
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/invite
+       Parameters = {staffIdx=[111], staffEmail=[staff1234@gmail.com], email=[user1234@gmail.com], _csrf=[47108770-9bc9-4719-b1d2-227fc052cc10]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSendForInvite(Long, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.uxn_api.web.error.LoginException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 411
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;status&quot;:411,&quot;message&quot;:&quot;STAFF_NOT_FOUND&quot;,&quot;code&quot;:&quot;STAFF_NOT_FOUND&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:06.008 ERROR 30880 --- [    Test worker] c.e.u.web.error.CustomExceptionHandler   : LoginException :404
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/invite
+       Parameters = {staffIdx=[111], staffEmail=[staff1234@gmail.com], email=[user1234@gmail.com], _csrf=[fecf7ff8-0886-4234-b7ee-1ae0c3e41b8e]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSendForInvite(Long, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.uxn_api.web.error.LoginException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;status&quot;:404,&quot;message&quot;:&quot;NOT_FOUND&quot;,&quot;code&quot;:&quot;NOT_FOUND&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:06.015 ERROR 30880 --- [    Test worker] c.e.u.web.error.CustomExceptionHandler   : LoginException :411
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/mail/invite
+       Parameters = {staffIdx=[111], staffEmail=[null], email=[user1234@gmail.com], _csrf=[8390d255-675b-4d4f-8832-138448787373]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#mailSendForInvite(Long, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.uxn_api.web.error.LoginException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 411
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;status&quot;:411,&quot;message&quot;:&quot;STAFF_NOT_FOUND&quot;,&quot;code&quot;:&quot;STAFF_NOT_FOUND&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:06.030 DEBUG 30880 --- [    Test worker] c.e.uxn_api.web.email.MailApiController  : passwordLink 비밀번호 재설정 링크 전송 시작 
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/link
+       Parameters = {email=[staff1234@gmail.com], _csrf=[2b389951-6008-4b52-9391-f714c3fb5704]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#passwordLink(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:06.035 DEBUG 30880 --- [    Test worker] c.e.uxn_api.web.email.MailApiController  : passwordLink 비밀번호 재설정 링크 전송 시작 
+2023-05-19 17:33:06.036 ERROR 30880 --- [    Test worker] c.e.u.web.error.CustomExceptionHandler   : LoginException :404
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/link
+       Parameters = {email=[staff1234@gmail.com], _csrf=[aa8d8f6c-b9cb-4c01-93b4-098800b6a222]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#passwordLink(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.uxn_api.web.error.LoginException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;status&quot;:404,&quot;message&quot;:&quot;NOT_FOUND&quot;,&quot;code&quot;:&quot;NOT_FOUND&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:06.041 DEBUG 30880 --- [    Test worker] c.e.uxn_api.web.email.MailApiController  : passwordLink 비밀번호 재설정 링크 전송 시작 
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/mail/link
+       Parameters = {email=[staff1234@gmail.com], _csrf=[51b02896-7e0a-4e76-9292-8df5c39957aa]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.email.MailApiController
+           Method = com.example.uxn_api.web.email.MailApiController#passwordLink(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5</a> at 2023. 5. 19. 오후 5:33:17</p>
+</div>
+</div>
+</body>
+</html>

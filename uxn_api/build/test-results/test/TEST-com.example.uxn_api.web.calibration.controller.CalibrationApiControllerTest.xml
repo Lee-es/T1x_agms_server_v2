@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:02" hostname="NOTEBOOK-KWYEOM" time="0.488">
+  <properties/>
+  <testcase name="calibration save test" classname="com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest" time="0.461"/>
+  <testcase name="calibration read test" classname="com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest" time="0.024"/>
+  <system-out><![CDATA[17:32:56.958 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:32:56.974 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:32:57.056 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+17:32:57.081 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest], using SpringBootContextLoader
+17:32:57.088 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]: class path resource [com/example/uxn_api/web/calibration/controller/CalibrationApiControllerTest-context.xml] does not exist
+17:32:57.088 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]: class path resource [com/example/uxn_api/web/calibration/controller/CalibrationApiControllerTestContext.groovy] does not exist
+17:32:57.088 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:32:57.089 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]: CalibrationApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:32:57.241 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]
+17:32:57.388 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\GIT_Source\T1x_agms_server\uxn_api\build\classes\java\main\com\example\uxn_api\UxnApiApplication.class]
+17:32:57.390 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest
+17:32:57.397 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.uxn_api.web.calibration.controller.CalibrationApiControllerTest]: using defaults.
+17:32:57.398 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:32:57.456 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30ba29cf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@552da55b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@9215bfb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48e2b4b7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@29770835, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1148673d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1235086c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4faf4191, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5e88cef1, org.springframework.test.context.event.EventPublishingTestExecutionListener@c2b2b92, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@36e73413, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3f14897, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1b96f15e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4eb42e05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@417cdc6c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@48409124, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@64709573]
+17:32:57.465 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6d462dd1 testClass = CalibrationApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7ad6b9b2 testClass = CalibrationApiControllerTest, locations = '{}', classes = '{class com.example.uxn_api.UxnApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@2a063e1a, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@767c34a0, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@2c0389e8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@f0b3126e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c5b04c7, [ImportsContextCustomizer@65744714 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@65dfce2f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6c249eb5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@b76dcc7d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+## BeforeAll Annotation 호출 ##
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:32:58.469  INFO 30880 --- [    Test worker] c.e.u.w.c.c.CalibrationApiControllerTest : Starting CalibrationApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:32:58.479 DEBUG 30880 --- [    Test worker] c.e.u.w.c.c.CalibrationApiControllerTest : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:32:58.481  INFO 30880 --- [    Test worker] c.e.u.w.c.c.CalibrationApiControllerTest : No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:33:01.252  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:01.530  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 612043f9-b51a-4e96-b349-7dd7747bafe0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:01.999  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66d746b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@378281b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f096ff2, org.springframework.security.web.header.HeaderWriterFilter@5f27a3fe, org.springframework.security.web.csrf.CsrfFilter@3a55699d, org.springframework.security.web.authentication.logout.LogoutFilter@1d746abb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21038810, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1cc8292d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@62ac2389, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12387785, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e1d4818, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a5fc2d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cdb78fd, org.springframework.security.web.session.SessionManagementFilter@5aa7b3c5, org.springframework.security.web.access.ExceptionTranslationFilter@5d5c6662, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@659d856e]
+2023-05-19 17:33:02.185  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:02.186  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:02.189  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-05-19 17:33:02.248  INFO 30880 --- [    Test worker] c.e.u.w.c.c.CalibrationApiControllerTest : Started CalibrationApiControllerTest in 4.708 seconds (JVM running for 17.885)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/calibration/save
+       Parameters = {_csrf=[10e03742-33c0-42a0-abfc-aa848616d51b]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"93"]
+             Body = {"title":"calibration","contents":"99","createData":"2022-11-03 09:28:59:000000","userid":33}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.calibration.controller.CalibrationApiController
+           Method = com.example.uxn_api.web.calibration.controller.CalibrationApiController#save(CalibrationSaveReqDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"title":"calibration","contents":"99","createData":"2022-11-03 09:28:59:000000","userid":33}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/calibration/read/33
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@5dcd97fb, SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.calibration.controller.CalibrationApiController
+           Method = com.example.uxn_api.web.calibration.controller.CalibrationApiController#read(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"title":"Calibration","contents":"99","createdDateTime":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+## afterAll Annotation 호출 ##
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

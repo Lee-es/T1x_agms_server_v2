@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.uxn_api.service.login.TokenServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.023">
+  <properties/>
+  <testcase name="updateExpireTime test" classname="com.example.uxn_api.service.login.TokenServiceTest" time="0.003"/>
+  <testcase name="saveToken test" classname="com.example.uxn_api.service.login.TokenServiceTest" time="0.018"/>
+  <system-out><![CDATA[17:32:56.293 [Test worker] INFO com.example.uxn_api.service.login.TokenService - saveToken :user123@gmail.com / 3d2dcc78-1942-41c3-91a8-9fd55bda533e/refreshToken
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,48 @@
+tasks.withType(org.gradle.jvm.tasks.Jar){
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE // jar 파일 생성시 duplicate 핸들링 전략을 세우지 않으면 빌드 에러남.
+}
+
+
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'org.projectlombok:lombok:1.18.22'
+    implementation 'com.google.code.gson:gson:2.8.7'
+
+}
+
+apply plugin: "jacoco"
+
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("$buildDir/reports")
+}
+
+jacocoTestReport {
+
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports"
+
+    def coverageSourceDirs = ['src/main/java']
+
+
+    sourceDirectories.from = files(coverageSourceDirs)
+    executionData.from = files("${buildDir}/jacoco/test.exec")
+
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.enabled true
+    }
+}
+
+
+
+
+test {
+    useJUnitPlatform()
+}

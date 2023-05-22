@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.uxn_api.web.user.controller.UserHomeControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:15" hostname="NOTEBOOK-KWYEOM" time="0.032">
+  <properties/>
+  <testcase name="confirmLogin test" classname="com.example.uxn_api.web.user.controller.UserHomeControllerTest" time="0.016"/>
+  <testcase name="checkLogin test" classname="com.example.uxn_api.web.user.controller.UserHomeControllerTest" time="0.008"/>
+  <testcase name="redirectLogin test" classname="com.example.uxn_api.web.user.controller.UserHomeControllerTest" time="0.006"/>
+  <system-out><![CDATA[2023-05-19 17:33:14.738  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.UserHomeControllerTest], using SpringBootContextLoader
+2023-05-19 17:33:14.738  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.UserHomeControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 17:33:14.740  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.UserHomeControllerTest]: UserHomeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 17:33:14.746  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.UserHomeControllerTest
+2023-05-19 17:33:14.746  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 17:33:14.747  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@523b91d8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b0a803c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1cb76551, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9a9c3ad, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7122611, org.springframework.test.context.support.DirtiesContextTestExecutionListener@58c64daf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f7c260b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@388f26e2, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2e3bbd4c, org.springframework.test.context.event.EventPublishingTestExecutionListener@447a2611, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5a280ceb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b51997a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68739681, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7d2c6f30, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@67f96b2a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@70f4b4e6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@447f3e7]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2023-05-19 17:33:14.774  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserHomeControllerTest       : Starting UserHomeControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
+2023-05-19 17:33:14.775 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.UserHomeControllerTest       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-19 17:33:14.775  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserHomeControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2023-05-19 17:33:15.332  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-19 17:33:15.423  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d2e35310-b714-48cc-979b-2cbc8b7baec9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-19 17:33:15.543  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e446934, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20f08fb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@42af8eb7, org.springframework.security.web.header.HeaderWriterFilter@790ba4d8, org.springframework.security.web.csrf.CsrfFilter@127c9b0, org.springframework.security.web.authentication.logout.LogoutFilter@455211e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@354cac20, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f62f5a0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@708d0a2a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@323ab25f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73aeefc6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57a7a80f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1742e62e, org.springframework.security.web.session.SessionManagementFilter@7d7ab2e1, org.springframework.security.web.access.ExceptionTranslationFilter@6cbbb17d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6331bd71]
+2023-05-19 17:33:15.595  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-19 17:33:15.595  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-19 17:33:15.596  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-19 17:33:15.608  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserHomeControllerTest       : Started UserHomeControllerTest in 0.859 seconds (JVM running for 31.245)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/users/confirm
+       Parameters = {device=[device1], _csrf=[21336144-06ab-469e-a367-003144079da9]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserHomeController
+           Method = com.example.uxn_api.web.user.controller.UserHomeController#confirmLogin(HttpServletRequest, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-05-19 17:33:15.632 DEBUG 30880 --- [    Test worker] c.e.u.w.u.controller.UserHomeController  : checkLogin 65 device:device1
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/users/check
+       Parameters = {device=[device1], _csrf=[d082413d-112e-4aa6-86f7-9f52aa2fd3f7]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserHomeController
+           Method = com.example.uxn_api.web.user.controller.UserHomeController#checkLogin(HttpServletRequest, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/users/login
+       Parameters = {_csrf=[61bec691-283a-4306-8450-a778fdd961c9]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.example.uxn_api.web.user.controller.UserHomeController
+           Method = com.example.uxn_api.web.user.controller.UserHomeController#redirectLogin(HttpServletRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:https://agmscare.kr/login
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:"en", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"https://agmscare.kr/login"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = https://agmscare.kr/login
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

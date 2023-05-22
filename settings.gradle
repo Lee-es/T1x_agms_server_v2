@@ -1,0 +1,3 @@
+rootProject.name = 'uxn_demo'
+include 'uxn_common'
+include 'uxn_api'

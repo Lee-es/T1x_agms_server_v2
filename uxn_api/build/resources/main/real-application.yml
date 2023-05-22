@@ -1,0 +1,58 @@
+spring:
+#  jvm:
+#    heap-size: '256m'
+#    max-heap-size: '2048m'
+
+  mail:
+#    host: smtp.gmail.com
+    username: agms@uxn.co.kr
+    password: uthfkglqvwpayxqw
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enabled: true
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enabled: true
+          ssl:
+            enabled: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+
+  datasource:
+    url: jdbc:mysql://agms.cluster-cavsdcsmkfb3.ap-northeast-2.rds.amazonaws.com:3306/agms?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: 0727!agms
+    hikari:
+        maximum-pool-size: 20
+        auto-commit: false
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: 'validate'
+    show-sql: true
+    properties:
+      hibernate:
+        connection:
+          provider_disables_autocommit: true
+        query:
+          in_clause_parameter_padding: true
+          plan_parameter_metadata_max_size: 128
+          plan_cache_max_size: 2048
+        format_sql: true
+    generate-ddl: true
+    defer-datasource-initialization: true
+    database: mysql
+
+logging:
+  file:
+    name: ${user.dir}/log/event-check.log # 로깅 파일 위치
+    max-history: 7 # 로그 파일 삭제 주기 7일 후 로그 삭제.
+    max-size: 10MB # 로그 파일 하나당 최대 파일 사이즈
+  level:
+    com.example : debug #debug -> info -> error
