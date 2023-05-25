@@ -40,7 +40,7 @@ allprojects{ // 루트 프로젝트까지 설정 적용.
     apply plugin: 'io.spring.dependency-management'
 
     group 'org.example'
-    version '1.0.47'
+    version '1.1.0'
 
     sourceCompatibility = '11'
     targetCompatibility = '11'

@@ -21,10 +21,17 @@ spring:
             class: javax.net.ssl.SSLSocketFactory
 
   datasource:
-    url: jdbc:mysql://agms.cluster-cavsdcsmkfb3.ap-northeast-2.rds.amazonaws.com:3306/agms?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: admin
-    password: 0727!agms
+#mysql
+#    url: jdbc:mysql://agms.cluster-cavsdcsmkfb3.ap-northeast-2.rds.amazonaws.com:3306/agms?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: admin
+#    password: 0727!agms
+#postgres
+    url: jdbc:postgresql://localhost:5555/agms2?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Pa$$w0rd
+
     hikari:
         maximum-pool-size: 20
         auto-commit: false
@@ -47,7 +54,7 @@ spring:
         format_sql: true
     generate-ddl: true
     defer-datasource-initialization: true
-    database: mysql
+    database: postgresql
 
 logging:
   file:

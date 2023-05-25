@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.login.UserLoginServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.088">
+<testsuite name="com.example.uxn_api.service.login.UserLoginServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.07">
   <properties/>
-  <testcase name="doWhenLoginSuccess test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.008"/>
-  <testcase name="loadUserByUsername test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.057"/>
-  <testcase name="doWhenLoginFailCase1 test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.005"/>
-  <testcase name="doWhenLoginFailCase2 test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.003"/>
-  <testcase name="loginAttempt test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.001"/>
-  <testcase name="loginVerify test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.007"/>
-  <system-out><![CDATA[17:32:56.423 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
-17:32:56.424 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - doWhenLoginSuccess sessionId
-17:32:56.433 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.434 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
-17:32:56.435 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-19T17:32:56.434056200
-17:32:56.445 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.446 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
-17:32:56.446 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-19T17:32:56.446169
-17:32:56.446 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - email verify time out!
-17:32:56.450 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.451 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
-17:32:56.455 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.456 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 63
-17:32:56.456 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.457 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 1년 초과된 시간,
-17:32:56.459 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.465 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.466 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
-17:32:56.466 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-19T17:32:56.466280400
-17:32:56.469 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.471 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
-17:32:56.471 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-19T17:32:56.471664100
-17:32:56.471 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - email verify time out!
-17:32:56.474 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.475 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
-17:32:56.477 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.479 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
-17:32:56.479 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 46
-17:32:56.481 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
-17:32:56.483 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
-17:32:56.487 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
-17:32:56.487 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
-17:32:56.488 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId / 410
-17:32:56.490 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId / 400
-17:32:56.494 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
-17:32:56.498 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
-17:32:56.505 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginVerify 129
+  <testcase name="doWhenLoginSuccess test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.005"/>
+  <testcase name="loadUserByUsername test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.046"/>
+  <testcase name="doWhenLoginFailCase1 test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.003"/>
+  <testcase name="doWhenLoginFailCase2 test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.002"/>
+  <testcase name="loginAttempt test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.002"/>
+  <testcase name="loginVerify test" classname="com.example.uxn_api.service.login.UserLoginServiceTest" time="0.005"/>
+  <system-out><![CDATA[10:11:25.574 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
+10:11:25.575 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - doWhenLoginSuccess sessionId
+10:11:25.577 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.578 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
+10:11:25.579 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-23T10:11:25.579647500
+10:11:25.583 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.585 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
+10:11:25.586 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-23T10:11:25.586160
+10:11:25.586 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - email verify time out!
+10:11:25.590 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.592 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
+10:11:25.596 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.597 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 63
+10:11:25.598 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.598 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 1년 초과된 시간,
+10:11:25.600 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.603 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.605 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
+10:11:25.606 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-23T10:11:25.605071400
+10:11:25.609 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.609 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 이메일 인증 에러
+10:11:25.609 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - now : 2023-05-23T10:11:25.609084500
+10:11:25.609 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - email verify time out!
+10:11:25.612 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.613 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
+10:11:25.617 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.618 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
+10:11:25.619 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 46
+10:11:25.619 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loadUserByUsername called:user123@gmail.com
+10:11:25.620 [Test worker] INFO com.example.uxn_api.service.login.UserLoginService - 로그인 성공 43
+10:11:25.625 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
+10:11:25.625 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
+10:11:25.626 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId / 410
+10:11:25.626 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId / 400
+10:11:25.629 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
+10:11:25.633 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginAttempt sessionId
+10:11:25.639 [Test worker] DEBUG com.example.uxn_api.service.login.UserLoginService - loginVerify 129
 ]]></system-out>
   <system-err><![CDATA[com.example.uxn_api.web.error.LoginException: 413
 	at com.example.uxn_api.service.login.UserLoginService.loadUserByUsername(UserLoginService.java:173)

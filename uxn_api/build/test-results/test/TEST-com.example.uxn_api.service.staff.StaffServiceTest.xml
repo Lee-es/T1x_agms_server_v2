@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.staff.StaffServiceTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.109">
+<testsuite name="com.example.uxn_api.service.staff.StaffServiceTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.077">
   <properties/>
-  <testcase name="save test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.003"/>
-  <testcase name="emailVerifyCode test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.002"/>
-  <testcase name="unRecognizeList test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.007"/>
+  <testcase name="save test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.002"/>
+  <testcase name="emailVerifyCode test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.001"/>
+  <testcase name="unRecognizeList test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
   <testcase name="staffDetailForUser test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
   <testcase name="deleteStaff test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.003"/>
-  <testcase name="addAuthority test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
-  <testcase name="registration1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.006"/>
-  <testcase name="registration2 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.006"/>
+  <testcase name="addAuthority test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.003"/>
+  <testcase name="registration1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
+  <testcase name="registration2 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
   <testcase name="staffDetail test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.001"/>
-  <testcase name="staffList test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
-  <testcase name="userInfo test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.005"/>
-  <testcase name="agpReportDto test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.007"/>
-  <testcase name="getUserList1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.002"/>
+  <testcase name="staffList test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.003"/>
+  <testcase name="userInfo test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.003"/>
+  <testcase name="agpReportDto test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.005"/>
+  <testcase name="getUserList1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.0"/>
   <testcase name="getUserList2 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.002"/>
-  <testcase name="checkLink1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.005"/>
+  <testcase name="checkLink1 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.006"/>
   <testcase name="checkLink2 test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.004"/>
-  <testcase name="userResult test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.017"/>
-  <testcase name="deRegistrationUser test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.002"/>
+  <testcase name="userResult test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.012"/>
+  <testcase name="deRegistrationUser test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.001"/>
   <testcase name="detailStaff test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.001"/>
   <testcase name="emailCheck test" classname="com.example.uxn_api.service.staff.StaffServiceTest" time="0.001"/>
-  <system-out><![CDATA[17:32:56.813 [Test worker] DEBUG com.example.uxn_api.service.staff.StaffService - registration start
-17:32:56.813 [Test worker] DEBUG com.example.uxn_api.service.staff.StaffService - registration DUPLICATE_STAFF
+  <system-out><![CDATA[10:11:25.834 [Test worker] DEBUG com.example.uxn_api.service.staff.StaffService - registration start
+10:11:25.834 [Test worker] DEBUG com.example.uxn_api.service.staff.StaffService - registration DUPLICATE_STAFF
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

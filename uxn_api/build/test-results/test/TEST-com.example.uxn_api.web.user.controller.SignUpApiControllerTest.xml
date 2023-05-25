@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:12" hostname="NOTEBOOK-KWYEOM" time="0.312">
+<testsuite name="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:38" hostname="NOTEBOOK-KWYEOM" time="0.227">
   <properties/>
-  <testcase name="withdrawalUser test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.041"/>
+  <testcase name="withdrawalUser test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.033"/>
   <testcase name="staffSave test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.04"/>
-  <testcase name="adminSave test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.078"/>
-  <testcase name="userSave test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.149"/>
-  <system-out><![CDATA[2023-05-19 17:33:11.379  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest], using SpringBootContextLoader
-2023-05-19 17:33:11.380  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-05-19 17:33:11.380  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest]: SignUpApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-05-19 17:33:11.396  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.SignUpApiControllerTest
-2023-05-19 17:33:11.397  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-05-19 17:33:11.398  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59c728dd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@612d469f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32f6dfe1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1351f188, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7330b2ff, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78a20bb8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7cafda9a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60eeb936, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@163f489e, org.springframework.test.context.event.EventPublishingTestExecutionListener@7ea86e2a, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7cd1006f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@696331ca, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@574ffc0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3810187a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4cb6a56f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c2b3052, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1e0352e8]
+  <testcase name="adminSave test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.068"/>
+  <testcase name="userSave test" classname="com.example.uxn_api.web.user.controller.SignUpApiControllerTest" time="0.083"/>
+  <system-out><![CDATA[2023-05-23 10:11:37.479  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest], using SpringBootContextLoader
+2023-05-23 10:11:37.480  INFO 22408 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-23 10:11:37.480  INFO 22408 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.SignUpApiControllerTest]: SignUpApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-23 10:11:37.502  INFO 22408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.SignUpApiControllerTest
+2023-05-23 10:11:37.503  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-23 10:11:37.504  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e6b5ed4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@68290ee4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@579fd180, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dc47a1e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@94d1a8c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@29b36b6f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@89bc08, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3ea3328d, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5f5bc6af, org.springframework.test.context.event.EventPublishingTestExecutionListener@6d812638, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2025ae7c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7b5c7af, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6da0748, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@628e414d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6fd5552e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46746fc4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10c2c005]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,28 +20,28 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.1)
 
-2023-05-19 17:33:11.433  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Starting SignUpApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
-2023-05-19 17:33:11.433 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Running with Spring Boot v2.7.1, Spring v5.3.21
-2023-05-19 17:33:11.434  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : No active profile set, falling back to 1 default profile: "default"
-2023-05-19 17:33:12.040  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2023-05-19 17:33:12.115  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-05-23 10:11:37.532  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Starting SignUpApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 22408 (started by tochi in D:\GIT_Source\T1x_agms_server_v2\uxn_api)
+2023-05-23 10:11:37.533 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-23 10:11:37.533  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2023-05-23 10:11:38.081  WARN 22408 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-23 10:11:38.152  WARN 22408 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 99dd9416-720e-41e4-8d65-c65a22a316aa
+Using generated security password: 445120d0-c177-47ca-a9e2-1c86c79606cc
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-05-19 17:33:12.230  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8418a64, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77e1a7a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4973afe4, org.springframework.security.web.header.HeaderWriterFilter@794433b5, org.springframework.security.web.csrf.CsrfFilter@576ebd91, org.springframework.security.web.authentication.logout.LogoutFilter@4e9c1d91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55f1b845, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@527ec6d3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f8a1a8c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e0a54ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f63082, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21777d92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53d984f7, org.springframework.security.web.session.SessionManagementFilter@6b53152a, org.springframework.security.web.access.ExceptionTranslationFilter@636a6bfb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a42a3ba]
-2023-05-19 17:33:12.297  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-05-19 17:33:12.297  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-05-19 17:33:12.298  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-05-19 17:33:12.311  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Started SignUpApiControllerTest in 0.91 seconds (JVM running for 27.947)
-2023-05-19 17:33:12.323 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : withdrawal : user23@gmail.com
-2023-05-19 17:33:12.323 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : user found, start withdrawal
+2023-05-23 10:11:38.237  INFO 22408 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b80f2c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e811c3f, org.springframework.security.web.context.SecurityContextPersistenceFilter@283024a2, org.springframework.security.web.header.HeaderWriterFilter@2ad43051, org.springframework.security.web.csrf.CsrfFilter@154a3126, org.springframework.security.web.authentication.logout.LogoutFilter@392f31cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@741f8c5c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d78ec12, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@56f406df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@11335b42, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45991ff0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e44e9aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d96ae08, org.springframework.security.web.session.SessionManagementFilter@6cb7fb13, org.springframework.security.web.access.ExceptionTranslationFilter@65111abe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@584bb9f9]
+2023-05-23 10:11:38.272  INFO 22408 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-23 10:11:38.272  INFO 22408 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-23 10:11:38.273  INFO 22408 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-23 10:11:38.297  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiControllerTest      : Started SignUpApiControllerTest in 0.791 seconds (JVM running for 21.454)
+2023-05-23 10:11:38.310 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : withdrawal : user23@gmail.com
+2023-05-23 10:11:38.311 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : user found, start withdrawal
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/withdrawal/user/user23@gmail.com
-       Parameters = {_csrf=[d8b80c25-117e-435f-88a5-459603dd24da]}
+       Parameters = {_csrf=[47be8ce4-837f-493f-942d-6f2fd7f65def]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -74,13 +74,13 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.350 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : withdrawal : staff123@gmail.com
-2023-05-19 17:33:12.351 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : staff found, start withdrawal
+2023-05-23 10:11:38.328 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : withdrawal : staff123@gmail.com
+2023-05-23 10:11:38.329 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : staff found, start withdrawal
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/withdrawal/user/staff123@gmail.com
-       Parameters = {_csrf=[3907d51a-ee95-4d8a-8762-d24dfdb019f6]}
+       Parameters = {_csrf=[efd9ad3b-1727-4e2e-a068-4b69a83e09e6]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -117,7 +117,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/staff/save
-       Parameters = {_csrf=[e85fbecc-84a0-4acd-a5e3-7aecfbea4bd1]}
+       Parameters = {_csrf=[9b15fa6a-c1bf-48a8-8aa5-cb1a56bd3de2]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"119"]
              Body = {"staffId":"staffId","staffName":"staffName","email":"staff1234@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -150,12 +150,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.381  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
+2023-05-23 10:11:38.358  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/staff/save
-       Parameters = {_csrf=[c247cb8b-f083-4c6e-a61f-a64d37209d38]}
+       Parameters = {_csrf=[d84c2160-829c-494d-85df-a7161b601d67]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"118"]
              Body = {"staffId":"staffId","staffName":"staffName","email":"staff123@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -188,12 +188,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.388  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
+2023-05-23 10:11:38.365  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/staff/save
-       Parameters = {_csrf=[e1fa4b85-8b22-4899-8808-cc6aeb59c835]}
+       Parameters = {_csrf=[9b4483dd-b27f-4f6e-ab49-eb98c9c5f8d5]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"118"]
              Body = {"staffId":"staffId","staffName":"staffName","email":"staff123@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -226,12 +226,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.392  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 이메일 중복
+2023-05-23 10:11:38.371  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 이메일 중복
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/staff/save
-       Parameters = {_csrf=[66c4b8e9-0fac-4a77-a628-e86767f5aece]}
+       Parameters = {_csrf=[28a366ca-8bf9-4d97-bba7-9090c6c2e9f9]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"118"]
              Body = {"staffId":"staffId","staffName":"staffName","email":"staff123@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -268,7 +268,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/admin/save
-       Parameters = {_csrf=[00e25b05-26a0-4b64-abaa-6437927961ee]}
+       Parameters = {_csrf=[5c855f78-ad15-45e8-b31c-022835a320d4]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"70"]
              Body = {"userName":"user","email":"user123@gmail.com","password":"uxn1234!@"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -297,16 +297,16 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
      Content type = application/json
-             Body = {"password":null,"email":"user123@gmail.com","idx":null,"emailVerifyCode":null,"role":"ADMIN","gender":null,"birth":null,"eventCheck":false,"emailVerifiedSuccess":false,"enabled":true,"errorCount":0,"accountLock":false,"scanCount":0,"emailVerifyStartTime":null,"willConfirmDate":null,"minGlucose":0,"maxGlucose":0,"authorities":null,"devices":null,"noteList":null,"username":null,"accountNonLocked":true,"accountNonExpired":true,"credentialsNonExpired":true}
+             Body = {"password":null,"email":"user123@gmail.com","idx":null,"emailVerifyCode":null,"role":"ADMIN","gender":null,"birth":null,"eventCheck":false,"emailVerifiedSuccess":false,"enabled":true,"errorCount":0,"accountLock":false,"scanCount":0,"emailVerifyStartTime":null,"willConfirmDate":null,"minGlucose":0,"maxGlucose":0,"authorities":null,"devices":null,"noteList":null,"accountNonLocked":true,"username":null,"credentialsNonExpired":true,"accountNonExpired":true}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.473  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 이메일 중복
+2023-05-23 10:11:38.440  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 이메일 중복
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/admin/save
-       Parameters = {_csrf=[fd1891f3-46de-4740-9f1b-c2757f050a39]}
+       Parameters = {_csrf=[7eb606cb-51f1-4c7f-9e7e-8c14c89f8820]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"70"]
              Body = {"userName":"user","email":"user123@gmail.com","password":"uxn1234!@"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -343,7 +343,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/user/save
-       Parameters = {_csrf=[603ebc7a-1f2f-4c4a-be1e-49a300b03f25]}
+       Parameters = {_csrf=[5fcc5e0e-cc1f-4347-ac15-3aa6169f13e7]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"92"]
              Body = {"userName":"user","email":"user1234@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -376,12 +376,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.599  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
+2023-05-23 10:11:38.512  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/user/save
-       Parameters = {_csrf=[24f0998a-58f9-42ae-8c79-86820cab3ad9]}
+       Parameters = {_csrf=[837478bf-1229-4d0d-b131-408ec2995737]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"93"]
              Body = {"userName":"staff","email":"user1234@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -414,12 +414,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.610  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
+2023-05-23 10:11:38.519  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/user/save
-       Parameters = {_csrf=[00177975-3f64-42d3-b766-60ffc2749128]}
+       Parameters = {_csrf=[5fc29257-2ac9-4924-9448-154f8b63bda2]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"92"]
              Body = {"userName":"user","email":"user1234@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -452,12 +452,12 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:12.619  INFO 30880 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
+2023-05-23 10:11:38.524  INFO 22408 --- [    Test worker] c.e.u.w.u.c.SignUpApiController          : 회원 가입이 가능한 유일한 상태
 
 MockHttpServletRequest:
       HTTP Method = POST
       Request URI = /api/v1/sign-up/user/save
-       Parameters = {_csrf=[53559190-4df5-46e5-b397-1b7bc22d8ec1]}
+       Parameters = {_csrf=[d1c72f20-2909-4bbd-9d46-d7f6fb3e1833]}
           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"92"]
              Body = {"userName":"user","email":"user1234@gmail.com","password":"uxn1234!@","birth":"1999-01-01"}
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}

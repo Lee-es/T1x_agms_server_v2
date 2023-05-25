@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:33:16" hostname="NOTEBOOK-KWYEOM" time="0.165">
+<testsuite name="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:41" hostname="NOTEBOOK-KWYEOM" time="0.139">
   <properties/>
-  <testcase name="average test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
-  <testcase name="diabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
-  <testcase name="activate test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.015"/>
-  <testcase name="getPercentileWithTime test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.021"/>
-  <testcase name="getUserInfoByUserId test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.011"/>
-  <testcase name="getPercent test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.012"/>
-  <testcase name="bloodSugarReport test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.018"/>
-  <testcase name="getUserInfo test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.01"/>
+  <testcase name="average test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.011"/>
+  <testcase name="diabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.011"/>
+  <testcase name="activate test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.012"/>
+  <testcase name="getPercentileWithTime test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.017"/>
+  <testcase name="getUserInfoByUserId test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.01"/>
+  <testcase name="getPercent test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.009"/>
+  <testcase name="bloodSugarReport test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
+  <testcase name="getUserInfo test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.009"/>
   <testcase name="percentAndTime test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.013"/>
-  <testcase name="getDiabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.015"/>
-  <testcase name="getMedian test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.01"/>
-  <system-out><![CDATA[2023-05-19 17:33:15.647  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest], using SpringBootContextLoader
-2023-05-19 17:33:15.648  INFO 30880 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-05-19 17:33:15.648  INFO 30880 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: UserInfoApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-05-19 17:33:15.653  INFO 30880 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.UserInfoApiControllerTest
-2023-05-19 17:33:15.653  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-05-19 17:33:15.654  INFO 30880 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a0d5396, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76b85ce6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@16f3be34, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1271feb2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72009e89, org.springframework.test.context.support.DirtiesContextTestExecutionListener@466ba343, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d62b7a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50fb54d4, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@26797c94, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d13b2a3, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6594fd32, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f4358a0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2330400, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2215284f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60aa2c52, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@15d9febf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f50fb00]
+  <testcase name="getDiabetesList test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.014"/>
+  <testcase name="getMedian test" classname="com.example.uxn_api.web.user.controller.UserInfoApiControllerTest" time="0.009"/>
+  <system-out><![CDATA[2023-05-23 10:11:41.192  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest], using SpringBootContextLoader
+2023-05-23 10:11:41.193  INFO 22408 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-23 10:11:41.193  INFO 22408 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.uxn_api.web.user.controller.UserInfoApiControllerTest]: UserInfoApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-23 10:11:41.196  INFO 22408 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.uxn_api.UxnApiApplication for test class com.example.uxn_api.web.user.controller.UserInfoApiControllerTest
+2023-05-23 10:11:41.197  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-23 10:11:41.198  INFO 22408 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dab94bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61dac810, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6b05a005, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@54c8ba63, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1587ca32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@22aa1ada, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64698302, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7563364e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5e9eb48a, org.springframework.test.context.event.EventPublishingTestExecutionListener@2c100949, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@449fe5a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68f479db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4365baab, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6f13a9cf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@24633159, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6f12beaf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ccf104]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -27,26 +27,26 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.1)
 
-2023-05-19 17:33:15.682  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Starting UserInfoApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 30880 (started by tochi in D:\GIT_Source\T1x_agms_server\uxn_api)
-2023-05-19 17:33:15.682 DEBUG 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Running with Spring Boot v2.7.1, Spring v5.3.21
-2023-05-19 17:33:15.682  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : No active profile set, falling back to 1 default profile: "default"
-2023-05-19 17:33:16.270  WARN 30880 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2023-05-19 17:33:16.345  WARN 30880 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-05-23 10:11:41.222  INFO 22408 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Starting UserInfoApiControllerTest using Java 11.0.16 on notebook-kwyeom with PID 22408 (started by tochi in D:\GIT_Source\T1x_agms_server_v2\uxn_api)
+2023-05-23 10:11:41.223 DEBUG 22408 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-05-23 10:11:41.223  INFO 22408 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2023-05-23 10:11:41.777  WARN 22408 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-05-23 10:11:41.864  WARN 22408 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 8b70f85c-33d6-4e00-af52-4b128d002a8c
+Using generated security password: b12eff4c-29eb-4268-9d2e-cc69f2682831
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-05-19 17:33:16.467  INFO 30880 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b8b5f5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396b48fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@67e206c5, org.springframework.security.web.header.HeaderWriterFilter@6592fa91, org.springframework.security.web.csrf.CsrfFilter@f81c7ee, org.springframework.security.web.authentication.logout.LogoutFilter@95e537b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39165aaf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57cd03e6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32a3be5d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30301206, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b30453f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@598464ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2332a2d, org.springframework.security.web.session.SessionManagementFilter@66dd1347, org.springframework.security.web.access.ExceptionTranslationFilter@6b54e957, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60f04e58]
-2023-05-19 17:33:16.515  INFO 30880 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-05-19 17:33:16.515  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-05-19 17:33:16.516  INFO 30880 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-05-19 17:33:16.531  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Started UserInfoApiControllerTest in 0.874 seconds (JVM running for 32.168)
+2023-05-23 10:11:41.942  INFO 22408 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25049bde, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f8c57f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f4bcfd3, org.springframework.security.web.header.HeaderWriterFilter@7e4632cb, org.springframework.security.web.csrf.CsrfFilter@2fea6cfb, org.springframework.security.web.authentication.logout.LogoutFilter@22691a5c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22fac960, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57c5f175, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@703dbd49, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64828ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c031dee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@639ca2cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@387886, org.springframework.security.web.session.SessionManagementFilter@633aeafb, org.springframework.security.web.access.ExceptionTranslationFilter@71a85a7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c61b786]
+2023-05-23 10:11:41.979  INFO 22408 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-23 10:11:41.979  INFO 22408 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-23 10:11:41.980  INFO 22408 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-05-23 10:11:41.986  INFO 22408 --- [    Test worker] c.e.u.w.u.c.UserInfoApiControllerTest    : Started UserInfoApiControllerTest in 0.785 seconds (JVM running for 25.142)
 
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/diabetes/average/33
-       Parameters = {_csrf=[ddb4fdfe-7755-4f3b-8ab3-1ba7d2951a7b]}
+       Parameters = {_csrf=[41ecfd49-5a88-4c8a-b00d-57c43129f42e]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -83,7 +83,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/diabetes-list/start-end/33
-       Parameters = {startDay=[25], endDay=[27], _csrf=[8a16e790-6799-431b-9f70-9e052a341792]}
+       Parameters = {startDay=[25], endDay=[27], _csrf=[d24ccf4d-e0e7-4992-a978-8f8b94acdc82]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -112,7 +112,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
      Content type = application/json
-             Body = [{"diabetes":99.99,"create_data_time":"2023-05-19T17:33:16.5499196"}]
+             Body = [{"diabetes":99.99,"create_data_time":"2023-05-23T10:11:41.9998478"}]
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -120,7 +120,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/activate/percent/33
-       Parameters = {day=[3], _csrf=[6d80658e-5ff0-4af5-9684-891492de1f56]}
+       Parameters = {day=[3], _csrf=[e34e5b34-2968-40a0-8b6c-cbeb09bf7ba3]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -157,7 +157,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/activate/percent/33
-       Parameters = {_csrf=[9a938848-f5a4-421e-9638-a5750fd02d76]}
+       Parameters = {_csrf=[78d15456-bd42-42f0-b4f4-d96146f8cc73]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -194,7 +194,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/percentile/time/33
-       Parameters = {hour=[17], minutes=[33], _csrf=[a1ee0d4c-62bc-4f40-8d12-43af455a2443]}
+       Parameters = {hour=[10], minutes=[11], _csrf=[4700e0f5-55a7-480e-b13a-8295a521e5a8]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -231,7 +231,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/search/userID
-       Parameters = {_csrf=[437b32b2-f2db-4c0a-9635-271ef65359b7]}
+       Parameters = {_csrf=[68d42ef3-6a6f-45d0-a6ef-fd1d2043230a]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -260,16 +260,16 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
      Content type = application/json
-             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-19T17:33:16.6039639"}]}
+             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-23T10:11:42.0431792"}]}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2023-05-19 17:33:16.621  INFO 30880 --- [    Test worker] c.e.u.w.u.c.UserInfoApiController        : size : 1
+2023-05-23 10:11:42.058  INFO 22408 --- [    Test worker] c.e.u.w.u.c.UserInfoApiController        : size : 1
 
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/percent/33
-       Parameters = {_csrf=[8b9f90b4-cbc9-46bc-9ca6-a67191440219]}
+       Parameters = {_csrf=[ece4a2bd-d22e-4dad-ad06-2fc3ed381a25]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -306,7 +306,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/report/blood/sugar/33
-       Parameters = {_csrf=[ac421ba8-e0c1-4a86-a126-54eba9342bac]}
+       Parameters = {_csrf=[f1be105b-e89c-4a7e-bf8e-aebee0ea1532]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -335,7 +335,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
      Content type = application/json
-             Body = [{"startDay":"2023-05-05T17:33:16.6343851","endDay":"2023-05-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-20T17:33:16.6343851","endDay":"2023-05-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-05T17:33:16.6343851","endDay":"2023-04-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-21T17:33:16.6343851","endDay":"2023-04-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-06T17:33:16.6343851","endDay":"2023-03-20T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-19T17:33:16.6343851","endDay":"2023-03-05T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-04T17:33:16.6343851","endDay":"2023-02-18T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-20T17:33:16.6343851","endDay":"2023-02-03T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-05T17:33:16.6343851","endDay":"2023-01-19T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2022-12-21T17:33:16.6343851","endDay":"2023-01-04T17:33:16.6343851","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null}]
+             Body = [{"startDay":"2023-05-09T10:11:42.0688492","endDay":"2023-05-23T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-24T10:11:42.0688492","endDay":"2023-05-08T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-04-09T10:11:42.0688492","endDay":"2023-04-23T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-25T10:11:42.0688492","endDay":"2023-04-08T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-03-10T10:11:42.0688492","endDay":"2023-03-24T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-23T10:11:42.0688492","endDay":"2023-03-09T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-02-08T10:11:42.0688492","endDay":"2023-02-22T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-24T10:11:42.0688492","endDay":"2023-02-07T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2023-01-09T10:11:42.0688492","endDay":"2023-01-23T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null},{"startDay":"2022-12-25T10:11:42.0688492","endDay":"2023-01-08T10:11:42.0688492","average":99.9,"activatePercent":33.3,"eventLowerCount":0,"deviceId":null}]
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -343,7 +343,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/33
-       Parameters = {_csrf=[d9346987-0e2f-4022-a861-9d5a245a31b4]}
+       Parameters = {_csrf=[815488c9-9f9d-4c21-a43c-b153aa391f0c]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -372,7 +372,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
      Content type = application/json
-             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-19T17:33:16.6477971"}]}
+             Body = {"name":"user","email":"user123@gmail.com","checkDevices":[{"device_id":"deviceId","diabetes_level":99.99,"create_data_time":"2023-05-23T10:11:42.0794493"}]}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -380,7 +380,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/agp/33
-       Parameters = {range=[70, 180, 70, 54, 180, 250], _csrf=[5029cdbb-05cc-4f14-8a27-542d8061c724]}
+       Parameters = {range=[70, 180, 70, 54, 180, 250], _csrf=[46d72011-ee10-4bc4-985a-2c0fc821782a]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -417,7 +417,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/diabetes-list/33
-       Parameters = {month=[12], day=[27], _csrf=[a5d5bbb2-2174-4648-b250-b0d6ee6d91de]}
+       Parameters = {month=[12], day=[27], _csrf=[645034a0-de07-429c-a440-67201cb7b976]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -454,7 +454,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/diabetes-list/33
-       Parameters = {month=[12], _csrf=[7aab451f-97b8-4b59-badf-cff72f6a5977]}
+       Parameters = {month=[12], _csrf=[4de4353d-911b-4911-85b9-fc3399be707c]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -491,7 +491,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/diabetes-list/33
-       Parameters = {day=[27], _csrf=[83157170-ede9-4fa2-9a64-a0f297ff9666]}
+       Parameters = {day=[27], _csrf=[db8f6446-4462-4f75-a7cb-3e7d68617c09]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
@@ -528,7 +528,7 @@ MockHttpServletResponse:
 MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /api/v1/user/info/median/33
-       Parameters = {month=[12], day=[27], _csrf=[e786c0d2-3632-4b39-9553-d0088bd5ef65]}
+       Parameters = {month=[12], day=[27], _csrf=[6bd2d8d6-590b-4d45-8910-cd3820289bb1]}
           Headers = []
              Body = null
     Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}

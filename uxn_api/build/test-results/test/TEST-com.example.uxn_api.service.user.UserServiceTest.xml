@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.user.UserServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.037">
+<testsuite name="com.example.uxn_api.service.user.UserServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.031">
   <properties/>
   <testcase name="emailVerifyCode test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.002"/>
   <testcase name="addAuthority test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.003"/>
-  <testcase name="withdrawal test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.003"/>
-  <testcase name="updatePassword test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.01"/>
-  <testcase name="appendUserToStaff test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.003"/>
+  <testcase name="withdrawal test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.002"/>
+  <testcase name="updatePassword test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.011"/>
+  <testcase name="appendUserToStaff test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.004"/>
   <testcase name="saveUser test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.001"/>
   <testcase name="emailCheck test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.001"/>
-  <testcase name="deleteUser test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.004"/>
+  <testcase name="deleteUser test" classname="com.example.uxn_api.service.user.UserServiceTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[com.example.uxn_api.web.error.LoginException: 413
 	at com.example.uxn_api.service.user.UserService.updatePassword(UserService.java:245)

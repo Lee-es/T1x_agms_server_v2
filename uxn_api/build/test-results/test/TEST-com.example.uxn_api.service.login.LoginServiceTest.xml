@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.login.LoginServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.128">
+<testsuite name="com.example.uxn_api.service.login.LoginServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.104">
   <properties/>
-  <testcase name="confirmLogin test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.111"/>
-  <testcase name="userVerify test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.007"/>
-  <testcase name="checkLogin test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.005"/>
-  <system-out><![CDATA[17:32:56.247 [Test worker] ERROR com.example.uxn_api.service.login.LoginService - confirmLogin but email null
-17:32:56.253 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
-17:32:56.254 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
-17:32:56.260 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
-17:32:56.262 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 유저
-17:32:56.262 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
-17:32:56.264 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 스탶
-17:32:56.264 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
-17:32:56.265 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 로그인 실패.
-17:32:56.272 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
-17:32:56.272 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
+  <testcase name="confirmLogin test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.089"/>
+  <testcase name="userVerify test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.005"/>
+  <testcase name="checkLogin test" classname="com.example.uxn_api.service.login.LoginServiceTest" time="0.008"/>
+  <system-out><![CDATA[10:11:25.462 [Test worker] ERROR com.example.uxn_api.service.login.LoginService - confirmLogin but email null
+10:11:25.468 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
+10:11:25.468 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
+10:11:25.471 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
+10:11:25.472 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 유저
+10:11:25.472 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
+10:11:25.473 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 스탶
+10:11:25.473 [Test worker] INFO com.example.uxn_api.service.login.LoginService - userVerify 48.
+10:11:25.475 [Test worker] INFO com.example.uxn_api.service.login.LoginService - 로그인 실패.
+10:11:25.483 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
+10:11:25.484 [Test worker] DEBUG com.example.uxn_api.service.login.LoginService - checkLogin email:null
 ]]></system-out>
   <system-err><![CDATA[java.lang.NullPointerException
 	at com.example.uxn_api.service.login.LoginService.confirmLogin(LoginService.java:104)

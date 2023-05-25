@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.report.ReportServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.046">
+<testsuite name="com.example.uxn_api.service.report.ReportServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.028">
   <properties/>
-  <testcase name="csvFile test" classname="com.example.uxn_api.service.report.ReportServiceTest" time="0.032"/>
-  <testcase name="getReportItemList test" classname="com.example.uxn_api.service.report.ReportServiceTest" time="0.013"/>
+  <testcase name="csvFile test" classname="com.example.uxn_api.service.report.ReportServiceTest" time="0.017"/>
+  <testcase name="getReportItemList test" classname="com.example.uxn_api.service.report.ReportServiceTest" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[java.util.NoSuchElementException: No value present
 	at java.base/java.util.OptionalDouble.getAsDouble(OptionalDouble.java:128)

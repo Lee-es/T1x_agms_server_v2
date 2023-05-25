@@ -17,6 +17,11 @@ dependencies {
     runtimeOnly 'mysql:mysql-connector-java'
     implementation 'com.h2database:h2'
 
+    // 2023.05.24[ykw]: postgreSQL
+    implementation 'org.postgresql:postgresql:42.5.4'
+    // 2023.05.24[ykw]: log4jdbc-log4j2
+    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+
     // Swagger
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
     implementation("io.springfox:springfox-swagger2:2.9.2")

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.uxn_api.service.note.NoteServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:32:56" hostname="NOTEBOOK-KWYEOM" time="0.012">
+<testsuite name="com.example.uxn_api.service.note.NoteServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-23T01:11:25" hostname="NOTEBOOK-KWYEOM" time="0.006">
   <properties/>
-  <testcase name="note save test" classname="com.example.uxn_api.service.note.NoteServiceTest" time="0.006"/>
-  <testcase name="note read test" classname="com.example.uxn_api.service.note.NoteServiceTest" time="0.005"/>
-  <system-out><![CDATA[17:32:56.554 [Test worker] DEBUG com.example.uxn_api.service.note.NoteService - note save service
+  <testcase name="note save test" classname="com.example.uxn_api.service.note.NoteServiceTest" time="0.004"/>
+  <testcase name="note read test" classname="com.example.uxn_api.service.note.NoteServiceTest" time="0.002"/>
+  <system-out><![CDATA[10:11:25.671 [Test worker] DEBUG com.example.uxn_api.service.note.NoteService - note save service
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

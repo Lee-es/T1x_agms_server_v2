@@ -1,13 +1,13 @@
 server:
   port: 8080
 
-  #SSL
-  ssl:
-    enabled: true
-    key-store: /home/ubuntu/agmscare/agmscare_kr.jks
-    key-store-type: JKS
-    key-store-password: uxnsw0214 # jks 또는 pfx 암호
-    key-alias: agmscare_kr
+  #SSL - local test 시에는 인증서가 없으므로 아래 ssl 설정을 주석 처리해야 한다. (들여쓰기 위치 중요 - server -> ssl)
+#  ssl:
+#    enabled: true
+#    key-store: /home/ubuntu/agmscare/agmscare_kr.jks
+#    key-store-type: JKS
+#    key-store-password: uxnsw0214 # jks 또는 pfx 암호
+#    key-alias: agmscare_kr
 
 spring:
   # jpa
