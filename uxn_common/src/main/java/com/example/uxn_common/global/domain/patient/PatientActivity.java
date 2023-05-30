@@ -1,4 +1,4 @@
-package com.example.uxn_common.global.domain.staff;
+package com.example.uxn_common.global.domain.patient;
 
 import com.example.uxn_common.global.domain.user.ActivityKind;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -14,9 +14,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
-public class StaffActivity {
+public class PatientActivity {
     @Id
-    private Integer staffId;
+    private Long patientId;
 
     @Builder.Default
     @Enumerated(EnumType.STRING)

@@ -1,33 +1,16 @@
 package com.example.uxn_api.service.email;
 
 import com.example.uxn_api.config.CommonConstant;
-import com.example.uxn_api.service.login.LogService;
-import com.example.uxn_api.service.staff.StaffService;
-import com.example.uxn_api.service.user.UserService;
-import com.example.uxn_api.web.error.ErrorCode;
-import com.example.uxn_api.web.error.LoginException;
-import com.example.uxn_common.global.domain.email.repository.InviteRepository;
-import com.example.uxn_common.global.domain.staff.Staff;
-import com.example.uxn_common.global.domain.user.ActivityKind;
-import com.example.uxn_common.global.domain.user.ChangePasswordToken;
-import com.example.uxn_common.global.domain.user.User;
-import com.example.uxn_common.global.domain.user.repository.ChangePasswordTokenRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.mail.MailException;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
 import javax.mail.Session;
-import java.time.LocalDateTime;
 import java.util.Properties;
 import java.util.Random;
 import javax.mail.*;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
@@ -52,11 +35,11 @@ public class MailSendService { // 메인 메서드에서 실행했을 시에는 
         }
 
 
-    public void verificationMailSend(String recipient, int num, Long idx, String currentCode) throws MessagingException {
+    public void verificationMailSend(String recipient, int num, int idx, String currentCode) throws MessagingException {
         verificationMailSend(recipient,num,idx,currentCode,true);
     }
     @Async
-    public void verificationMailSend(String recipient, int num, Long idx, String currentCode, boolean isUser) throws MessagingException {
+    public void verificationMailSend(String recipient, int num, int idx, String currentCode, boolean isUser) throws MessagingException {
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");

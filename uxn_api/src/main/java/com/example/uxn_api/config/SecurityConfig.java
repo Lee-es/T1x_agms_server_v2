@@ -6,8 +6,7 @@ import com.example.uxn_api.service.login.CustomAuthenticationFailureHandler;
 import com.example.uxn_api.service.login.LoginAttemptService;
 import com.example.uxn_api.service.login.TokenService;
 import com.example.uxn_api.service.login.UserLoginService;
-import com.example.uxn_common.global.domain.staff.StaffRole;
-import com.example.uxn_common.global.domain.user.Role;
+import com.example.uxn_common.global.domain.code.Code;
 import com.example.uxn_common.global.domain.user.repository.UserTokenRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -89,15 +88,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/v1/user/login/**").permitAll()
                 .antMatchers("/api/v1/user/staff-info/check-mail/**").permitAll()
                 .antMatchers("/api/v1/user/staff-info/send-mail/**").permitAll()
-                .antMatchers("/api/v1/users/check").hasAnyRole(Role.USER.name(), StaffRole.STAFF.name())
-                .antMatchers("/api/v1/users/confirm").hasAnyRole(Role.USER.name(), StaffRole.STAFF.name())
-                .antMatchers("/api/v1/user/info/**").hasAnyRole(Role.USER.name(), StaffRole.STAFF.name())
-                .antMatchers("/api/v1/staff/registration/user").hasRole(Role.USER.name())
-                .antMatchers("/api/v1/staff/**").hasRole(StaffRole.STAFF.name())
-                .antMatchers("/api/v1/user/staff-info/**").hasAnyRole(Role.USER.name(), StaffRole.STAFF.name())
-//                .antMatchers("/api/v1/user/staff-info/**").hasRole(Role.USER.name())
-                .antMatchers("/api/v1/note/**").hasRole(Role.USER.name())
-                .antMatchers("/api/v1/calibration/**").hasRole(Role.USER.name())
+                .antMatchers("/api/v1/users/check").hasAnyRole(Code.ROLE_USER.getName(), Code.ROLE_STAFF.getName())
+                .antMatchers("/api/v1/users/confirm").hasAnyRole(Code.ROLE_USER.getName(), Code.ROLE_STAFF.getName())
+                .antMatchers("/api/v1/user/info/**").hasAnyRole(Code.ROLE_USER.getName(), Code.ROLE_STAFF.getName())
+                .antMatchers("/api/v1/staff/registration/user").hasRole(Code.ROLE_USER.getName())
+                .antMatchers("/api/v1/staff/**").hasRole(Code.ROLE_STAFF.getName())
+                .antMatchers("/api/v1/user/staff-info/**").hasAnyRole(Code.ROLE_USER.getName(), Code.ROLE_STAFF.getName())
+//                .antMatchers("/api/v1/user/staff-info/**").hasRole(Code.ROLE_USER.getName())
+                .antMatchers("/api/v1/note/**").hasRole(Code.ROLE_USER.getName())
+                .antMatchers("/api/v1/calibration/**").hasRole(Code.ROLE_USER.getName())
                 .and()
                 .addFilterAt(loginFilter, UsernamePasswordAuthenticationFilter.class) // 세션을 사용하지 않고 토큰을 사용하여 인증. -> 로그인 처리
                 .addFilterAt(checkFilter, BasicAuthenticationFilter.class) // -> 토큰 검증

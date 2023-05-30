@@ -1,6 +1,6 @@
 package com.example.uxn_common.global.entity.code;
 
-import com.example.uxn_common.global.domain_new.code.CodeType;
+import com.example.uxn_common.global.domain.code.CodeType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

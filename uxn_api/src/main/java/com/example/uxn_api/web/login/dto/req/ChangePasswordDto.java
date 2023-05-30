@@ -2,7 +2,10 @@ package com.example.uxn_api.web.login.dto.req;
 
 import com.example.uxn_common.global.utils.annotation.Password;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

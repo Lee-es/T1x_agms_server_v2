@@ -1,12 +1,10 @@
 package com.example.uxn_api.config.jwt.oauth;
 
-import com.example.uxn_api.service.login.LoginService;
 import com.example.uxn_api.service.login.TokenService;
 import com.example.uxn_api.service.login.UserLoginService;
 import com.example.uxn_api.web.user.dto.res.TokenVerifyResult;
 import com.example.uxn_common.global.domain.staff.Staff;
 import com.example.uxn_common.global.domain.user.User;
-import com.example.uxn_common.global.domain.user.UserAuthority;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -58,25 +56,25 @@ public class JWTCheckFilter extends BasicAuthenticationFilter {
             if(result.getAuthority().equals("ROLE_USER")) {
                 //user 전체를 가져오면 device 테이블로 로드되어 부하가 걸려서 user 이메일과 authority만 가져오는 걸로 변경 - 23.05.19 ykw
                 //수정 전
-//                User user = (User) userLoginService.loadUserByUsername(result.getUserId()); // 유저객체 말고 공통적으로 받을수 있는 객체 생성할것.
-
-//                UsernamePasswordAuthenticationToken userToken = new UsernamePasswordAuthenticationToken(
-//                        user.getEmail(), null, user.getAuthorities()
-//                );
-
-                //수정 후
-                String email = userLoginService.findEmailByUserEmail(result.getUserId());
-
-                Long userID = userLoginService.findUserIDByUserEmail(result.getUserId());
-                UserAuthority authority = userLoginService.findUserAuthorityByUserID(userID);
-                HashSet<UserAuthority> authorities = new HashSet<>();
-                authorities.add(authority);
+                User user = (User) userLoginService.loadUserByUsername(result.getUserId()); // 유저객체 말고 공통적으로 받을수 있는 객체 생성할것.
 
                 UsernamePasswordAuthenticationToken userToken = new UsernamePasswordAuthenticationToken(
-                        email, null, authorities
+                        user.getEmail(), null, user.getAuthorities()
                 );
 
-//                String email = user.getEmail();
+                //수정 후
+//                String email = userLoginService.findEmailByUserEmail(result.getUserId());
+//
+//                Long userID = userLoginService.findUserIDByUserEmail(result.getUserId());
+//                UserAuthority authority = userLoginService.findUserAuthorityByUserID(userID);
+//                HashSet<UserAuthority> authorities = new HashSet<>();
+//                authorities.add(authority);
+//
+//                UsernamePasswordAuthenticationToken userToken = new UsernamePasswordAuthenticationToken(
+//                        email, null, authorities
+//                );
+
+                String email = user.getEmail();
 //                if(!tokenService.isSavedToken(email,token)){
 //                    chain.doFilter(request, response);
 //                    return;
@@ -87,11 +85,11 @@ public class JWTCheckFilter extends BasicAuthenticationFilter {
                 SecurityContextHolder.getContext().setAuthentication(userToken);
                 chain.doFilter(request, response);
             }else {
-                Staff staff = (Staff) userLoginService.loadUserByUsername(result.getUserId()); // 유저객체 말고 공통적으로 받을수 있는 객체 생성할것.
+                User user = (User) userLoginService.loadUserByUsername(result.getUserId()); // 유저객체 말고 공통적으로 받을수 있는 객체 생성할것.
                 UsernamePasswordAuthenticationToken userToken = new UsernamePasswordAuthenticationToken(
-                        staff.getEmail(), null, staff.getAuthorities()
+                        user.getEmail(), null, user.getAuthorities()
                 );
-                String email = staff.getEmail();
+                String email = user.getEmail();
 //                if(!tokenService.isSavedToken(email,token)){
 //                    chain.doFilter(request, response);
 //                    return;

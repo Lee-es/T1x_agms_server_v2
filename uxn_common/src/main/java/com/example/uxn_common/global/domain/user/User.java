@@ -1,20 +1,16 @@
 package com.example.uxn_common.global.domain.user;
 
 import com.example.uxn_common.global.domain.Login;
-import com.example.uxn_common.global.domain.device.Device;
-import com.example.uxn_common.global.domain.note.Note;
-import com.example.uxn_common.global.domain.staff.Staff;
-import com.example.uxn_common.global.entity.BaseTimeEntity;
-
-import com.example.uxn_common.global.utils.annotation.Password;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import java.util.Set;
 
 @Entity
@@ -24,77 +20,65 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 public class User extends Login {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_idx")
-    private Long idx;
+    @Column(nullable = false)
+    private Integer id;
 
-//    @Column(unique = true)
-//    private String userId;
-
+    @Column(nullable = false)
     private String userName;
 
     @Email
+    @Column(length = 20)
     private String email;
 
-    private String emailVerifyCode;
+    @Column(columnDefinition = "boolean default true", nullable = false)
+    private Boolean isMale;
 
     private String password;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Role role;
+    private LocalDate birth;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Gender gender;
+    private Boolean isVerified;
 
-    private String birth;
+    @Column(columnDefinition = "boolean default true", nullable = false)
+    private Boolean isEnabled;
 
-    private boolean eventCheck;
+    private String phoneNumber;
 
-    private boolean emailVerifiedSuccess;
+    private LocalDate expiredAt;
 
-//    private Long median;
-//
-//    private Long average;
+    private String authority;
 
-    private boolean enabled; // 권한 관련
+    private String emailVerifyCode;
 
-    private int errorCount;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createdAt;
+    ///////////////////////////////////////////////////////////////////////////////////////
 
-    private boolean accountLock = false;
+//    @OneToOne
+//    @JoinColumn(name = "id")
+//    private Patient patient;
 
-    private int scanCount;
+//    public void setPatient(Patient patient) {
+//        this.patient = patient;
+//        this.patient.setPerson(this);
+//    }
 
-//    private boolean recognize;
-
-    private LocalDateTime emailVerifyStartTime;
-
-    private LocalDateTime willConfirmDate;
-
-    @Column(columnDefinition = "integer default 70")
-    private int minGlucose = 70;
-    @Column(columnDefinition = "integer default 180")
-    private int maxGlucose = 180;
+    ///////////////////////////////////////////////////////////////////////////////////////
 
 
-
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_idx", foreignKey = @ForeignKey(name = "user_idx"))
-    private Set<UserAuthority> authorities;
-
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "user") // 자식의 엔티티 삭제 처리를 부모가 관리.
-    @OrderBy("createDataTime asc")
-    private Set<Device> devices;
-
-    /*@ManyToOne
-    private Staff staff;*/
-
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
-    private Set<Note> noteList;
-
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        Collection<GrantedAuthority> collect = new ArrayList<>();
+        collect.add(new GrantedAuthority() {
+            @Override
+            public String getAuthority() {
+                return authority;
+            }
+        });
+        return null;
+    }
 
     @Override
     public String getUsername() {
@@ -103,66 +87,28 @@ public class User extends Login {
 
     @Override
     public boolean isAccountNonExpired() {
-        return enabled;
+        return isEnabled;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return enabled;
+        return isEnabled;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return enabled;
+        return isEnabled;
     }
 
     @Override
     public boolean isEnabled() {
-        return enabled;
-    }
-
-    /*
-    public void update(Staff staff){
-        this.staff = staff;
-    }
-
-    public void deRegistration(){
-        this.staff = null;
-    }*/
-
-    public void eventCheckUpdate(boolean eventCheck){
-        this.eventCheck = eventCheck;
-    }
-
-//    public void updateMedian(Long median){
-//        this.median = median;
-//    }
-
-    public void emailVerifyCode(String emailVerifyCode){
-        this.emailVerifyCode = emailVerifyCode;
+        // 사이트 내에서 1년동안 로그인을 안하면 휴먼계정을 전환을 하도록 하겠다.
+        // -> loginDate 타입을 모아놨다가 이 값을 false로 return 해버리면 된다.
+        return isEnabled;
     }
 
     public void emailCheck(boolean emailVerifiedSuccess){
-        this.emailVerifiedSuccess = emailVerifiedSuccess;
-        this.willConfirmDate = LocalDateTime.now().plusYears(1);
+        this.isVerified = emailVerifiedSuccess;
+        this.expiredAt = LocalDate.now().plusYears(1);
     }
-
-    public void passwordUpdate(String password){
-        this.password = password;
-    }
-
-    public void accountLockUpdate (boolean accountLock) {
-        this.accountLock = accountLock;
-    }
-    public void errorCountUpdate(int errorCount) {
-        this.errorCount = errorCount;
-    }
-
-    public void updateScanCount(int scanCount) {
-        this.scanCount = scanCount;
-    }
-
-    /*public void updateRecognize(boolean recognize) {
-        this.recognize = recognize;
-    }*/
 }

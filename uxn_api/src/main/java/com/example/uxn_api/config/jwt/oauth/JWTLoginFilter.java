@@ -1,20 +1,16 @@
 package com.example.uxn_api.config.jwt.oauth;
 
-import com.example.uxn_api.service.login.LoginAttemptService;
-import com.example.uxn_api.service.login.LoginService;
-import com.example.uxn_api.service.login.TokenService;
 import com.example.uxn_api.service.login.UserLoginService;
+import com.example.uxn_api.service.login.TokenService;
 import com.example.uxn_api.web.error.LoginException;
 import com.example.uxn_api.web.login.dto.req.LoginReqDto;
 import com.example.uxn_api.web.user.dto.res.TokenVerifyResult;
-import com.example.uxn_common.global.domain.Login;
 import com.example.uxn_common.global.domain.staff.Staff;
 import com.example.uxn_common.global.domain.user.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -77,18 +73,11 @@ public class JWTLoginFilter extends UsernamePasswordAuthenticationFilter {
 
             TokenVerifyResult verify = JWTUtil.refreshVerify(login.getRefreshToken()); // 유효하지 않으면 여기서 끝남.
             if(verify.isSuccess()){ // 유효 하면 ->
-
-                if(verify.getAuthority().equals("ROLE_USER")){
-                    User user = (User) userLoginService.loadUserByUsername(verify.getUserId());
-                    return new UsernamePasswordAuthenticationToken(
-                            user,user.getAuthorities()
-                    );
-                }else {
-                    Staff staff = (Staff) userLoginService.loadUserByUsername(verify.getUserId());
-                    return new UsernamePasswordAuthenticationToken(
-                            staff,staff.getAuthorities()
-                    );
-                }
+                //ROLE_USER or ROLE_STAFF
+                User user = (User) userLoginService.loadUserByUsername(verify.getUserId());
+                return new UsernamePasswordAuthenticationToken(
+                        user,user.getAuthorities()
+                );
 
             }else{
                 return null;
@@ -120,13 +109,13 @@ public class JWTLoginFilter extends UsernamePasswordAuthenticationFilter {
         }else {
             Staff staff = (Staff)authResult.getPrincipal();
             // Staff
-            String refreshToken = JWTUtil.makeStaffRefreshToken(staff);
+            String refreshToken = JWTUtil.makeRefreshToken(staff);
             response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer"); // 인증 테스트 -> KEY : Authorization Value : Bearer + 토큰 값.
-            response.setHeader("staff_auth_token", JWTUtil.makeStaffToken(staff));
+            response.setHeader("staff_auth_token", JWTUtil.makeAuthToken(staff));
             response.setHeader("staff_refresh_token", refreshToken);
             response.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
 //        response.getOutputStream().write(objectMapper.writeValueAsBytes(user)); // 인증된 토큰을 유저객체에 발행 -> 리턴 값이 유저객체로 넘어옴
-            response.getWriter().write("staff_token: " + JWTUtil.makeStaffToken(staff) + " staff_refresh_token: " + refreshToken);
+            response.getWriter().write("staff_token: " + JWTUtil.makeAuthToken(staff) + " staff_refresh_token: " + refreshToken);
             tokenService.updateExpireTime(staff.getEmail(),request.getHeader("uuid"), refreshToken);
             userLoginService.doWhenLoginSuccess(getClientIP(request),staff.getEmail(), request.toString());
         }

@@ -1,19 +1,14 @@
 package com.example.uxn_api.config.jwt.oauth;
 
-import com.example.uxn_api.config.CommonConstant;
-import com.example.uxn_common.global.domain.user.User;
 import com.example.uxn_common.global.domain.user.UserToken;
 import com.example.uxn_common.global.domain.user.repository.UserTokenRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.net.URLEncoder;
 import java.util.List;
 
 @Slf4j

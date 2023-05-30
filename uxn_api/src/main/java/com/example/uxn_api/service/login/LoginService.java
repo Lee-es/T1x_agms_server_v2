@@ -5,15 +5,16 @@ import com.example.uxn_api.web.error.ErrorCode;
 import com.example.uxn_api.web.error.LoginException;
 import com.example.uxn_api.web.login.dto.res.LoginCheckResult;
 import com.example.uxn_common.global.domain.Login;
+import com.example.uxn_common.global.domain.patient.repository.PatientRepository;
+import com.example.uxn_common.global.domain.user.UserToken;
+import com.example.uxn_common.global.domain.user.repository.UserRepository;
+import com.example.uxn_common.global.domain.user.repository.UserTokenRepository;
 import com.example.uxn_common.global.domain.staff.Staff;
 import com.example.uxn_common.global.domain.staff.repository.StaffRepository;
 import com.example.uxn_common.global.domain.user.ActivityKind;
 import com.example.uxn_common.global.domain.user.ChangePasswordToken;
 import com.example.uxn_common.global.domain.user.User;
-import com.example.uxn_common.global.domain.user.UserToken;
 import com.example.uxn_common.global.domain.user.repository.ChangePasswordTokenRepository;
-import com.example.uxn_common.global.domain.user.repository.UserRepository;
-import com.example.uxn_common.global.domain.user.repository.UserTokenRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -36,6 +37,7 @@ import java.util.List;
 public class LoginService {
 
     private final UserRepository userRepository;
+    private final PatientRepository patientRepository;
     private final StaffRepository staffRepository;
     private final PasswordEncoder passwordEncoder;
 
@@ -51,39 +53,40 @@ public class LoginService {
 
     private final LogService logService;
 
-    public void plusErrorCount(String email) {
-        userRepository.updateErrorCount(email);
-    }
+//    public void plusErrorCount(String email) {
+//        patientRepository.updateErrorCount(email);
+//    }
+//
+//    public void resetErrorCount(String email) {
+//        Patient patient = patientRepository.findByEmail(email);
+//        patient.errorCountUpdate(0);
+//    }
 
-    public void resetErrorCount(String email) {
-        User user = userRepository.findByEmail(email);
-        user.errorCountUpdate(0);
-    }
-
-    @Transactional(readOnly = true)
-    public boolean emailAuthenticated(String email, String pwd) {
-        Staff staff = staffRepository.findByEmailAndPassword(email, pwd);
-        User user = userRepository.findByEmailAndPassword(email, pwd);
-
-        if(user != null){
-            return user.isEmailVerifiedSuccess();
-        }else{
-            return staff.isEmailVerifiedSuccess();
-        }
-    }
+//    @Transactional(readOnly = true)
+//    public boolean emailAuthenticated(String email, String pwd) {
+//        Staff staff = staffRepository.findByEmailAndPassword(email, pwd);
+//        User user = userRepository.findByEmailAndPassword(email, pwd);
+//
+//        if(user != null){
+//            return user.isEmailVerifiedSuccess();
+//        }else{
+//            return staff.isEmailVerifiedSuccess();
+//        }
+//    }
 
     public Login userVerify(String userId, String pwd) {
         log.info("userVerify 48.");
         User user = userRepository.findByEmail(userId);
-        Staff staff = staffRepository.findByEmail(userId);
 
         if(passwordEncoder.matches(pwd, user.getPassword())) {
             log.info("유저");
             return user;
-        }else if(passwordEncoder.matches(pwd, staff.getPassword())) {
-            log.info("스탶");
-            return staff;
-        }else {
+        }
+//        else if(passwordEncoder.matches(pwd, person.getPassword())) {
+//            log.info("스탶");
+//            return person;
+//        }
+        else {
             log.info("로그인 실패.");
             return null;
         }
@@ -200,25 +203,21 @@ public class LoginService {
         User user = userRepository.findByEmail(email);
         String key = MailSendService.createKey();
         changePasswordTokenRepository.save(ChangePasswordToken.builder()
-                .createTime(LocalDateTime.now())
+                .created(LocalDateTime.now())
                 .email(email)
                 .token(key)
                 .build());
         if(user != null){
-            Long idx = user.getIdx();
+            int idx = user.getId();
             mailSendService.verificationMailSend(email,5, idx,key);
             logService.log(true, ActivityKind.FIND_PASSWORD,"비밀번호 재설정 링크 전송", email,null,null,null);
-        } else {
-            Staff staff = staffRepository.findByEmail(email);
-            if(staff!=null){
-                Long idx = staff.getIdx();
                 mailSendService.verificationMailSend(email,5, idx,key, false);
                 logService.log(false, ActivityKind.FIND_PASSWORD,"비밀번호 재설정 링크 전송", email,null,null,null);
-            } else {
-                logService.log(true, ActivityKind.FIND_PASSWORD,"user not found fail", email,null,null,null);
-                throw new LoginException("not found user", ErrorCode.NOT_FOUND);
-            }
-
+        }
+        else
+        {
+            logService.log(true, ActivityKind.FIND_PASSWORD,"user not found fail", email,null,null,null);
+            throw new LoginException("not found user", ErrorCode.NOT_FOUND);
         }
     }
 }

@@ -1,9 +1,6 @@
 package com.example.uxn_api;
 
-import com.example.uxn_api.service.user.UserService;
 import com.example.uxn_common.global.domain.user.User;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

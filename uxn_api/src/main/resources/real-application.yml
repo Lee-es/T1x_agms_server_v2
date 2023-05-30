@@ -27,7 +27,7 @@ spring:
 #    username: admin
 #    password: 0727!agms
 #postgres
-    url: jdbc:postgresql://localhost:5555/agms2?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    url: jdbc:postgresql://localhost:5555/agms?useSSl=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: Pa$$w0rd
